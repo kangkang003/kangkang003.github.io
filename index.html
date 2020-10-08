@@ -3,14 +3,15 @@
  <head>
    <meta charset="utf-8"/>
    <title>My source</title>
+  <script>
+  　　function checkLeave(){
+  　　　　event.returnValue="确定离开当前页面吗？";
+  　　}
+ 　　</script>
  </head>
-<body>
+ <body onbeforeunload="checkLeave()">
  <p>233333333333az</p>
 <img src="psc/100422185468_0mm_facetoface_collect_qrcode_1601820936210.png">
-<script type="text/javascript">
-window.onbeforeunload=function(e){
-return confirm("老大哥，真的要离开我吗？");
-}
-</script>
+  
 </body>
 </html>

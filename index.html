@@ -4,9 +4,13 @@
    <meta charset="utf-8"/>
    <title>My source</title>
   <script type="text/javascript">
-  　　function checkLeave(){
-  　　　　event.returnValue="确定离开当前页面吗？";
-  　　}
+ //body
+<body onbeforeunload="goodbye()">
+//window
+window.onbeforeunload=function(e){     
+　　var e = window.event||e;
+　　e.returnValue=("确定离开当前页面吗？");
+} 
  　　</script>
  </head>
  <body onbeforeunload="checkLeave()">
